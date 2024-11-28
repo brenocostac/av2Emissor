@@ -17,7 +17,7 @@ pipeline {
                 script {
                     def appName = 'clienteemissor'
                     def imageTag = "${appName}:${env.BUILD_ID}"
-                    bat "docker build --build-arg  -t ${imageTag} ."
+                    bat "docker build -t ${imageTag} ."
                 }
             }
         }
