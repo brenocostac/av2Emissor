@@ -6,7 +6,7 @@ pipeline {
         stage('Verificar Repositório') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/main']],
-                          userRemoteConfigs: [[url: 'https://github.com/brenocostac/Jenkins.git']]])
+                          userRemoteConfigs: [[url: 'https://github.com/brenocostac/av2Emissor.git']]])
             }
         }
 
