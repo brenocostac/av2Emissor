@@ -29,7 +29,6 @@ pipeline {
                     def imageTag = "${appName}:${env.BUILD_ID}"
                     bat "docker stop ${appName} || exit 0"
                     bat "docker rm ${appName} || exit 0"
-                    bat "docker-compose up -d --build"
                 }
             }
         }
